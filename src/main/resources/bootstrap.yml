@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      name: gateway-service
+      profile: ${SPRING_CLOUD_CONFIG_PROFILE}
+      uri: ${SPRING_CLOUD_CONFIG_URI}
+      username: ${SPRING_CLOUD_CONFIG_USERNAME}
+      password: ${SPRING_CLOUD_CONFIG_PASSWORD}
+      fail-fast: ${SPRING_CLOUD_CONFIG_FAIL_FAST}
+      retry:
+        max-attempts: ${SPRING_CLOUD_CONFIG_RETRY_MAX_ATTEMPTS}
